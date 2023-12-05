@@ -3,6 +3,7 @@
         <div class="navbar-brand">
             <p class="siteLogo"><a [routerLink]="'/show'">CAR'S EAGLE</a></p>
         </div>
+        <button type="button" id="btnBar" data-bs-toggle="offcanvas" data-bs-target="#sideCanvas"><i class="fas fa-bars"></i></button>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -65,3 +66,22 @@
         <p class="copy">© CAR'S EAGLE 2023</p>
     </div>
 </section>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="sideCanvas" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="hrefList">
+      <li class="href-item">
+        <a [routerLink]="'/contact'" class="href-link">CONTACT</a>
+      </li>
+      <li class="href-item">
+        <a [routerLink]="'/choose'" class="href-link">VOITURES</a>
+      </li>
+    </ul>
+    <button type="button" id="btnConnect" [routerLink]="'/login'">
+      <i class="fa fa-sign-in" aria-hidden="true"></i>
+    </button>
+  </div>
+</div>

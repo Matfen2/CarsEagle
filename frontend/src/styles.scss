@@ -53,6 +53,13 @@ $secondFont: speedBold;
                 }
             }
         }
+        #btnBar {
+            display: none;
+            border: none;
+            font-size: 1.4em;
+            color: $firstColor;
+            background: transparent;
+        }
         .collapse {
             justify-content: end;
             .navbar-nav {
@@ -119,6 +126,47 @@ $secondFont: speedBold;
     }
 }
 
+#sideCanvas {
+    height: 200px;
+    max-width: 300px;
+    background-color: $secondColor;
+    border-radius: 0px 0px 0px 40px;
+    .offcanvas-header {
+        .btn-close {
+            font-size: 1.6em;
+            color: $firstColor;
+        }
+    }
+    .offcanvas-body {
+        margin-top: -15px;
+        margin-left: -10px;
+        .hrefList {
+            .href-item {
+                text-align: center;
+                list-style-type: none;
+                .href-link {
+                    font-size: 1.8em;
+                    color: $firstColor;
+                    font-family: $secondFont;
+                    text-decoration: none;
+                }
+            }
+        }
+        #btnConnect {
+            display: block;
+            margin: -10px auto;
+            font-size: 1.4em;
+            color: $firstColor;
+            font-family: $firstFont;
+            background: transparent;
+            border: none;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
 // CHOOSE PAGE
 #choose {
    .navbar {
@@ -140,6 +188,13 @@ $secondFont: speedBold;
                     text-decoration: none;
                 }
             }
+        }
+        #btnBar {
+            display: none;
+            border: none;
+            font-size: 1.4em;
+            color: $firstColor;
+            background: transparent;
         }
         .collapse {
             justify-content: end;
@@ -719,6 +774,22 @@ $secondFont: speedBold;
                 font-family: $secondFont;
                 border: 1px solid azure;
                 background-color: darkgreen;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #show, #choose {
+        .navbar {
+            .navbar-brand {
+                .siteLogo {
+                    margin-top: -5px;
+                }
+            }
+            #btnBar {
+                display: block;
+                margin-top: -10px;
             }
         }
     }
