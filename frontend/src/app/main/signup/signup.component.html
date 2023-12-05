@@ -1,1 +1,28 @@
-<p>signup works!</p>
+<section id="signup">
+    <button type="button" id="btnCloseConnect" [routerLink]="'/show'"><i class="fas fa-times"></i></button>
+    <div class="containSignUp">
+        <form>
+            <p class="register">Enregistrer-vous :</p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <label></label>
+                    <input type="text" id="user" class="form-control" formControlName="user" placeholder="Nom d'utilisateur" />
+                </div>
+                <div class="col-lg-6">
+                    <label></label>
+                    <input type="text" id="adress" class="form-control" formControlName="adress" placeholder="Adresse email" />
+                </div>
+                <div class="col-lg-6">
+                    <label></label>
+                    <input type="text" id="phone" class="form-control" formControlName="phone" placeholder="Numéro de téléphone" />
+                </div>
+                <div class="col-lg-6">
+                    <label></label>
+                    <input type="text" id="pass" class="form-control" formControlName="pass" placeholder="Mot de Passe" />
+                </div>
+            </div>
+            <p class="nomember">Vous etes déjà inscris ? <a [routerLink]="'/login'" class="hrefLogIn">Connectez-vous</a></p>
+            <button type="submit" id="btnRegister">ENREGISTRER</button>
+        </form>
+    </div>
+</section>

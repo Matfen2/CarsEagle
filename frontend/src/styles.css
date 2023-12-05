@@ -31,6 +31,10 @@ body {
   margin-left: 10px;
   font-family: speedBold;
 }
+#show .navbar .navbar-brand .siteLogo a {
+  color: azure;
+  text-decoration: none;
+}
 #show .navbar .collapse {
   justify-content: end;
 }
@@ -88,6 +92,426 @@ body {
   font-family: speedBold;
 }
 
+#choose .navbar {
+  height: 80px;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(2, 70, 2);
+  justify-content: space-between;
+}
+#choose .navbar .navbar-brand .siteLogo {
+  font-size: 1.8em;
+  color: azure;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-family: speedBold;
+}
+#choose .navbar .navbar-brand .siteLogo a {
+  color: azure;
+  text-decoration: none;
+}
+#choose .navbar .collapse {
+  justify-content: end;
+}
+#choose .navbar .collapse .navbar-nav {
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  margin-right: 60px;
+}
+#choose .navbar .collapse .navbar-nav .nav-item .nav-link {
+  font-size: 1.6em;
+  color: azure;
+  text-decoration: none;
+  font-family: carbon;
+}
+#choose .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+  opacity: 0.8;
+  transform: scale(0.8);
+}
+#choose .navbar .collapse #btnConnect {
+  padding: 3px;
+  font-size: 1.4em;
+  margin-right: 3px;
+  color: azure;
+  font-family: carbon;
+  background: transparent;
+  border: none;
+}
+#choose .navbar .collapse #btnConnect:hover {
+  opacity: 0.8;
+}
+#choose .containChoose .img-fluid {
+  height: 800px;
+}
+#choose .containChoose .switchCars {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  position: absolute;
+}
+#choose .containChoose .switchCars .choose {
+  color: azure;
+  font-size: 2em;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 4px #000000;
+  font-family: speedBold;
+}
+#choose .containChoose .switchCars .listTypeCars #btnType {
+  margin: 10px;
+  opacity: 0.8;
+  color: azure;
+  font-size: 1.8em;
+  font-family: carbon;
+  background: black;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 4px #000000;
+  border: 1px solid black;
+}
+#choose .containChoose .switchCars .listTypeCars #btnType:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+#choose .containChoose .switchCars .showCars {
+  display: flex;
+  flex-direction: row;
+}
+#choose .containChoose .switchCars .showCars .detailsSwitch {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+#choose .containChoose .switchCars .showCars .detailsSwitch .infoSwitch .row {
+  margin-top: 10px;
+}
+#choose .containChoose .switchCars .showCars .detailsSwitch .infoSwitch .row .col-lg-4 .img-fluid {
+  margin: 10px;
+  height: 200px;
+  max-width: 800px;
+  border-radius: 20px;
+  border: 0px solid black;
+}
+#choose .footer {
+  height: 59px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(2, 70, 2);
+  justify-content: space-between;
+}
+#choose .footer .copy {
+  font-size: 1.7em;
+  color: azure;
+  font-family: speedBold;
+}
+
+#hybrides .navbar {
+  height: 80px;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(2, 70, 2);
+  justify-content: space-between;
+}
+#hybrides .navbar .navbar-brand .siteLogo {
+  font-size: 1.8em;
+  color: azure;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-family: speedBold;
+}
+#hybrides .navbar .navbar-brand .siteLogo a {
+  color: azure;
+  text-decoration: none;
+}
+#hybrides .navbar .collapse {
+  justify-content: end;
+}
+#hybrides .navbar .collapse .navbar-nav {
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  margin-right: 60px;
+}
+#hybrides .navbar .collapse .navbar-nav .nav-item .nav-link {
+  font-size: 1.6em;
+  color: azure;
+  text-decoration: none;
+  font-family: carbon;
+}
+#hybrides .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+  opacity: 0.8;
+  transform: scale(0.8);
+}
+#hybrides .navbar .collapse #btnConnect {
+  padding: 3px;
+  font-size: 1.4em;
+  margin-right: 3px;
+  color: azure;
+  font-family: carbon;
+  background: transparent;
+  border: none;
+}
+#hybrides .navbar .collapse #btnConnect:hover {
+  opacity: 0.8;
+}
+#hybrides .containHybrides .showHybrides .img-fluid {
+  height: 800px;
+}
+#hybrides .containHybrides .showHybrides .infoHybride {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+#hybrides .containHybrides .showHybrides .infoHybride .name {
+  font-size: 2.7em;
+  color: azure;
+  font-family: speedBold;
+  text-align: center;
+  margin-bottom: -20px;
+  text-shadow: 0px 0px 4px #000000;
+}
+#hybrides .containHybrides .showHybrides .infoHybride .img-fluid {
+  height: 500px;
+  max-width: 1200px;
+  text-align: center;
+}
+#hybrides .containHybrides .showHybrides .infoHybride .numberInfo {
+  text-align: center;
+}
+#hybrides .containHybrides .showHybrides .infoHybride .numberInfo .row .col-lg-4 p {
+  font-size: 2.2em;
+  color: azure;
+  letter-spacing: 2px;
+  font-family: speedBold;
+  text-shadow: 0px 0px 4px #000000;
+}
+#hybrides .containHybrides .showHybrides .infoHybride .numberInfo .row .col-lg-4 span {
+  font-size: 1.6em;
+  color: azure;
+  font-family: carbon;
+  letter-spacing: 4px;
+  text-shadow: 0px 0px 4px #000000;
+}
+#hybrides .footer {
+  height: 59px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(2, 70, 2);
+  justify-content: space-between;
+}
+#hybrides .footer .copy {
+  font-size: 1.7em;
+  color: azure;
+  font-family: speedBold;
+}
+
+#electrics .navbar {
+  height: 80px;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(2, 70, 2);
+  justify-content: space-between;
+}
+#electrics .navbar .navbar-brand .siteLogo {
+  font-size: 1.8em;
+  color: azure;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-family: speedBold;
+}
+#electrics .navbar .navbar-brand .siteLogo a {
+  color: azure;
+  text-decoration: none;
+}
+#electrics .navbar .collapse {
+  justify-content: end;
+}
+#electrics .navbar .collapse .navbar-nav {
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  margin-right: 60px;
+}
+#electrics .navbar .collapse .navbar-nav .nav-item .nav-link {
+  font-size: 1.6em;
+  color: azure;
+  text-decoration: none;
+  font-family: carbon;
+}
+#electrics .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+  opacity: 0.8;
+  transform: scale(0.8);
+}
+#electrics .navbar .collapse #btnConnect {
+  padding: 3px;
+  font-size: 1.4em;
+  margin-right: 3px;
+  color: azure;
+  font-family: carbon;
+  background: transparent;
+  border: none;
+}
+#electrics .navbar .collapse #btnConnect:hover {
+  opacity: 0.8;
+}
+#electrics .containElectrics .showElectrics .img-fluid {
+  height: 800px;
+}
+#electrics .containElectrics .showElectrics .infoElectric {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+#electrics .containElectrics .showElectrics .infoElectric .name {
+  font-size: 2.7em;
+  color: azure;
+  font-family: speedBold;
+  text-align: center;
+  margin-bottom: -20px;
+  text-shadow: 0px 0px 4px #000000;
+}
+#electrics .containElectrics .showElectrics .infoElectric .img-fluid {
+  height: 500px;
+  max-width: 1200px;
+  text-align: center;
+}
+#electrics .containElectrics .showElectrics .infoElectric .numberInfo {
+  text-align: center;
+}
+#electrics .containElectrics .showElectrics .infoElectric .numberInfo .row .col-lg-4 p {
+  font-size: 2.2em;
+  color: azure;
+  letter-spacing: 2px;
+  font-family: speedBold;
+  text-shadow: 0px 0px 4px #000000;
+}
+#electrics .containElectrics .showElectrics .infoElectric .numberInfo .row .col-lg-4 span {
+  font-size: 1.6em;
+  color: azure;
+  font-family: carbon;
+  letter-spacing: 4px;
+  text-shadow: 0px 0px 4px #000000;
+}
+#electrics .footer {
+  height: 59px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(2, 70, 2);
+  justify-content: space-between;
+}
+#electrics .footer .copy {
+  font-size: 1.7em;
+  color: azure;
+  font-family: speedBold;
+}
+
+#diesels .navbar {
+  height: 80px;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(2, 70, 2);
+  justify-content: space-between;
+}
+#diesels .navbar .navbar-brand .siteLogo {
+  font-size: 1.8em;
+  color: azure;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-family: speedBold;
+}
+#diesels .navbar .navbar-brand .siteLogo a {
+  color: azure;
+  text-decoration: none;
+}
+#diesels .navbar .collapse {
+  justify-content: end;
+}
+#diesels .navbar .collapse .navbar-nav {
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  margin-right: 60px;
+}
+#diesels .navbar .collapse .navbar-nav .nav-item .nav-link {
+  font-size: 1.6em;
+  color: azure;
+  text-decoration: none;
+  font-family: carbon;
+}
+#diesels .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+  opacity: 0.8;
+  transform: scale(0.8);
+}
+#diesels .navbar .collapse #btnConnect {
+  padding: 3px;
+  font-size: 1.4em;
+  margin-right: 3px;
+  color: azure;
+  font-family: carbon;
+  background: transparent;
+  border: none;
+}
+#diesels .navbar .collapse #btnConnect:hover {
+  opacity: 0.8;
+}
+#diesels .containDiesels .showDiesels .img-fluid {
+  height: 800px;
+}
+#diesels .containDiesels .showDiesels .infoDiesel {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+#diesels .containDiesels .showDiesels .infoDiesel .name {
+  font-size: 2.7em;
+  color: azure;
+  font-family: speedBold;
+  text-align: center;
+  margin-bottom: -20px;
+  text-shadow: 0px 0px 4px #000000;
+}
+#diesels .containDiesels .showDiesels .infoDiesel .img-fluid {
+  height: 500px;
+  max-width: 1200px;
+  text-align: center;
+}
+#diesels .containDiesels .showDiesels .infoDiesel .numberInfo {
+  text-align: center;
+}
+#diesels .containDiesels .showDiesels .infoDiesel .numberInfo .row .col-lg-4 p {
+  font-size: 2.2em;
+  color: azure;
+  letter-spacing: 2px;
+  font-family: speedBold;
+  text-shadow: 0px 0px 4px #000000;
+}
+#diesels .containDiesels .showDiesels .infoDiesel .numberInfo .row .col-lg-4 span {
+  font-size: 1.6em;
+  color: azure;
+  font-family: carbon;
+  letter-spacing: 4px;
+  text-shadow: 0px 0px 4px #000000;
+}
+#diesels .footer {
+  height: 59px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(2, 70, 2);
+  justify-content: space-between;
+}
+#diesels .footer .copy {
+  font-size: 1.7em;
+  color: azure;
+  font-family: speedBold;
+}
+
 #login {
   width: 100%;
   height: 100vh;
@@ -118,7 +542,7 @@ body {
 }
 #login .containLogIn form .identify {
   text-align: center;
-  font-size: 1.8em;
+  font-size: 2.2em;
   color: azure;
   margin-bottom: -10px;
   font-family: speedBold;
@@ -141,6 +565,70 @@ body {
   opacity: 0.8;
 }
 #login .containLogIn form #btnIdentify {
+  padding: 7px;
+  display: block;
+  font-size: 1.2em;
+  margin: 8px auto;
+  color: azure;
+  border-radius: 20px;
+  font-family: speedBold;
+  border: 1px solid azure;
+  background-color: darkgreen;
+}
+
+#signup {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/pict/roadSignUp.jpg");
+}
+#signup #btnCloseConnect {
+  position: relative;
+  top: 1%;
+  left: 98%;
+  border: none;
+  font-size: 1.6em;
+  color: black;
+  background: transparent;
+}
+#signup .containSignUp {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: auto;
+  max-height: 270px;
+  padding: 10px;
+  max-width: 510px;
+  top: 32%;
+  position: relative;
+}
+#signup .containSignUp form .register {
+  text-align: center;
+  font-size: 2.2em;
+  color: azure;
+  margin-bottom: -10px;
+  font-family: speedBold;
+  text-shadow: 0px 0px 4px #000000;
+}
+#signup .containSignUp form .nomember {
+  font-size: 1.6em;
+  color: azure;
+  text-align: center;
+  margin-top: 9px;
+  font-family: carbon;
+  text-shadow: 0px 0px 4px #000000;
+}
+#signup .containSignUp form .nomember .hrefLogIn {
+  cursor: pointer;
+  color: azure;
+  text-decoration: none;
+}
+#signup .containSignUp form .nomember .hrefLogIn:hover {
+  opacity: 0.8;
+}
+#signup .containSignUp form #btnRegister {
   padding: 7px;
   display: block;
   font-size: 1.2em;

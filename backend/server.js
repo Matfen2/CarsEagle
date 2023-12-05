@@ -24,7 +24,7 @@ db.connect((error) => {
 });
 
 app.listen(PORT, () => {
-    console.log('Conection au port serveur ' + PORT);
+    console.log('Connection au port serveur ' + PORT);
 })
 
 // LOG IN VERIFY DATA
