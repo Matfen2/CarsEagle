@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  display: block;
+}
+
+@font-face {
+  font-family: carbon;
+  src: url("/assets/font/carbonBold.otf");
+}
+@font-face {
+  font-family: speedBold;
+  src: url("/assets/font/speedBold.ttf");
+}
+#show .navbar {
+  height: 80px;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(2, 70, 2);
+  justify-content: space-between;
+}
+#show .navbar .navbar-brand .siteLogo {
+  font-size: 1.8em;
+  color: azure;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-family: speedBold;
+}
+#show .navbar .collapse {
+  justify-content: end;
+}
+#show .navbar .collapse .navbar-nav {
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  margin-right: 60px;
+}
+#show .navbar .collapse .navbar-nav .nav-item .nav-link {
+  font-size: 1.6em;
+  color: azure;
+  text-decoration: none;
+  font-family: carbon;
+}
+#show .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+  opacity: 0.8;
+  transform: scale(0.8);
+}
+#show .navbar .collapse #btnConnect {
+  padding: 3px;
+  font-size: 1.4em;
+  margin-right: 3px;
+  color: azure;
+  font-family: carbon;
+  background: transparent;
+  border: none;
+}
+#show .navbar .collapse #btnConnect:hover {
+  opacity: 0.8;
+}
+#show .containShow .picsum-img-wrapper .img-fluid {
+  height: 800px;
+}
+#show .containShow .picsum-img-wrapper .word {
+  position: absolute;
+  top: 4%;
+  width: 100%;
+  text-align: center;
+  font-family: carbon;
+  color: azure;
+  font-size: 2.2em;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 4px #000000;
+}
+#show .footer {
+  height: 59px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(2, 70, 2);
+  justify-content: space-between;
+}
+#show .footer .copy {
+  font-size: 1.7em;
+  color: azure;
+  font-family: speedBold;
+}
+
+#login {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/pict/roadLogIn.png");
+}
+#login #btnCloseConnect {
+  position: relative;
+  top: 1%;
+  left: 98%;
+  border: none;
+  font-size: 1.6em;
+  color: black;
+  background: transparent;
+}
+#login .containLogIn {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: auto;
+  max-height: 270px;
+  padding: 10px;
+  max-width: 490px;
+  top: 33%;
+  position: relative;
+}
+#login .containLogIn form .identify {
+  text-align: center;
+  font-size: 1.8em;
+  color: azure;
+  margin-bottom: -10px;
+  font-family: speedBold;
+  text-shadow: 0px 0px 4px #000000;
+}
+#login .containLogIn form .already {
+  font-size: 1.6em;
+  color: azure;
+  text-align: center;
+  margin-top: 9px;
+  font-family: carbon;
+  text-shadow: 0px 0px 4px #000000;
+}
+#login .containLogIn form .already .hrefSignUp {
+  cursor: pointer;
+  color: azure;
+  text-decoration: none;
+}
+#login .containLogIn form .already .hrefSignUp:hover {
+  opacity: 0.8;
+}
+#login .containLogIn form #btnIdentify {
+  padding: 7px;
+  display: block;
+  font-size: 1.2em;
+  margin: 8px auto;
+  color: azure;
+  border-radius: 20px;
+  font-family: speedBold;
+  border: 1px solid azure;
+  background-color: darkgreen;
+}/*# sourceMappingURL=styles.css.map */

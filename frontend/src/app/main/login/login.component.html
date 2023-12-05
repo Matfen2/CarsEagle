@@ -1,0 +1,14 @@
+<section id="login">
+    <button type="button" id="btnCloseConnect" [routerLink]="'/show'"><i class="fas fa-times"></i></button>
+    <div class="containLogIn">
+        <form>
+            <p class="identify">Veuillez vous identifier :</p>
+            <label></label>
+            <input type="text" id="user" class="form-control" formControlName="user" placeholder="Nom d'utilisateur" />
+            <label></label>
+            <input type="text" id="pass" class="form-control" formControlName="pass" placeholder="Mot de Passe" />
+            <p class="already">Vous n'etes pas inscris ? <a [routerLink]="'/signup'" class="hrefSignUp">Inscrivez-vous</a></p>
+            <button type="submit" id="btnIdentify">SE CONNECTER</button>
+        </form>
+    </div>
+</section>
