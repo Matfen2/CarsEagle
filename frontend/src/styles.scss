@@ -15,6 +15,9 @@ $thirdColor: rgb(2, 70, 2);
 $firstFont: carbon;
 $secondFont: speedBold;
 
+$maxWidthCard: 900px;
+$maxWidthCardTwo: 1200px;
+
 @mixin flex ($flexDirection) {
     display: flex;
     flex-direction: $flexDirection;
@@ -127,8 +130,8 @@ $secondFont: speedBold;
 }
 
 #sideCanvas {
-    height: 200px;
-    max-width: 300px;
+    height: 160px;
+    max-width: 250px;
     background-color: $secondColor;
     border-radius: 0px 0px 0px 40px;
     .offcanvas-header {
@@ -139,7 +142,7 @@ $secondFont: speedBold;
     }
     .offcanvas-body {
         margin-top: -15px;
-        margin-left: -10px;
+        margin-right: 21px;
         .hrefList {
             .href-item {
                 text-align: center;
@@ -155,6 +158,7 @@ $secondFont: speedBold;
         #btnConnect {
             display: block;
             margin: -10px auto;
+            padding-left: 25px;
             font-size: 1.4em;
             color: $firstColor;
             font-family: $firstFont;
@@ -270,11 +274,11 @@ $secondFont: speedBold;
                     .infoSwitch {
                         .row {
                             margin-top: 10px;
-                            .col-lg-4 {
+                            .car {
+                                max-width: 350px;
                                 .img-fluid {
                                     margin: 10px;
                                     height: 200px;
-                                    max-width: 800px;
                                     border-radius: 20px;
                                     border: 0px solid $secondColor;
                                 }
@@ -285,7 +289,6 @@ $secondFont: speedBold;
             }
         }
     }
-    
     .footer {
         height: 59px;
         padding: 10px;
@@ -321,6 +324,13 @@ $secondFont: speedBold;
                     text-decoration: none;
                 }
             }
+        }
+        #btnBar {
+            display: none;
+            border: none;
+            font-size: 1.4em;
+            color: $firstColor;
+            background: transparent;
         }
         .collapse {
             justify-content: end;
@@ -364,14 +374,6 @@ $secondFont: speedBold;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 position: absolute;
-                .name {
-                    font-size: 2.7em;
-                    color: $firstColor;
-                    font-family: $secondFont;
-                    text-align: center;
-                    margin-bottom: -20px;
-                    text-shadow: 0px 0px 4px #000000;
-                }
                 .img-fluid {
                     height: 500px;
                     max-width: 1200px;
@@ -397,6 +399,14 @@ $secondFont: speedBold;
                             }
                         }
                     }
+                }
+                .name {
+                    font-size: 2.7em;
+                    color: $firstColor;
+                    font-family: $secondFont;
+                    text-align: center;
+                    margin-top: 15px;
+                    text-shadow: 0px 0px 4px #000000;
                 }
             }
         }
@@ -436,6 +446,13 @@ $secondFont: speedBold;
                     text-decoration: none;
                 }
             }
+        }
+        #btnBar {
+            display: none;
+            border: none;
+            font-size: 1.4em;
+            color: $firstColor;
+            background: transparent;
         }
         .collapse {
             justify-content: end;
@@ -479,14 +496,6 @@ $secondFont: speedBold;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 position: absolute;
-                .name {
-                    font-size: 2.7em;
-                    color: $firstColor;
-                    font-family: $secondFont;
-                    text-align: center;
-                    margin-bottom: -20px;
-                    text-shadow: 0px 0px 4px #000000;
-                }
                 .img-fluid {
                     height: 500px;
                     max-width: 1200px;
@@ -512,6 +521,14 @@ $secondFont: speedBold;
                             }
                         }
                     }
+                }
+                .name {
+                    font-size: 2.7em;
+                    color: $firstColor;
+                    font-family: $secondFont;
+                    text-align: center;
+                    margin-top: 15px;
+                    text-shadow: 0px 0px 4px #000000;
                 }
             }
         }
@@ -551,6 +568,13 @@ $secondFont: speedBold;
                     text-decoration: none;
                 }
             }
+        }
+        #btnBar {
+            display: none;
+            border: none;
+            font-size: 1.4em;
+            color: $firstColor;
+            background: transparent;
         }
         .collapse {
             justify-content: end;
@@ -594,14 +618,6 @@ $secondFont: speedBold;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 position: absolute;
-                .name {
-                    font-size: 2.7em;
-                    color: $firstColor;
-                    font-family: $secondFont;
-                    text-align: center;
-                    margin-bottom: -20px;
-                    text-shadow: 0px 0px 4px #000000;
-                }
                 .img-fluid {
                     height: 500px;
                     max-width: 1200px;
@@ -627,6 +643,14 @@ $secondFont: speedBold;
                             }
                         }
                     }
+                }
+                .name {
+                    font-size: 2.7em;
+                    color: $firstColor;
+                    font-family: $secondFont;
+                    text-align: center;
+                    margin-top: 15px;
+                    text-shadow: 0px 0px 4px #000000;
                 }
             }
         }
@@ -712,7 +736,7 @@ $secondFont: speedBold;
     }
 }
 
-// SINGUP PAGE 
+// SIGNUP PAGE 
 #signup {
     width: 100%;
     height: 100vh;
@@ -779,8 +803,79 @@ $secondFont: speedBold;
     }
 }
 
+@media screen and (max-width: 1440px) {
+    #choose {
+        .containChoose {
+            .switchCars {
+                top: 60%;
+                .showCars {
+                    .detailsSwitch {
+                        .infoSwitch {
+                            .row {
+                                width: 1000px;
+                                .car {
+                                    .img-fluid {
+                                        height: 280px;
+                                        max-width: 650px;
+                                        border: 3px solid $firstColor;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #show {
+        .navbar {
+            .navbar-brand {
+                .siteLogo {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+    #choose {
+        .containChoose {
+            .switchCars {
+                top: 63%;
+                .showCars {
+                    .detailsSwitch {
+                        .infoSwitch {
+                            .row {
+                                width: 800px;
+                                .car {
+                                    .img-fluid {
+                                        height: 260px;
+                                        max-width: 650px;
+                                        border: 3px solid $firstColor;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #login {
+        #btnCloseConnect {
+            left: 96%;
+        }
+    }
+    #signup {
+        #btnCloseConnect {
+            left: 96%;
+        }
+    }
+}
+
 @media screen and (max-width: 991px) {
-    #show, #choose {
+    #show, #choose, #diesels, #electrics, #hybrides {
         .navbar {
             .navbar-brand {
                 .siteLogo {
@@ -794,3 +889,246 @@ $secondFont: speedBold;
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    #show {
+        .navbar {
+            .navbar-brand {
+                .siteLogo {
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+    #choose {
+        .containChoose {
+            .switchCars {
+                top: 63%;
+                .showCars {
+                    .detailsSwitch {
+                        .infoSwitch {
+                            .row {
+                                width: 650px;
+                                .car {
+                                    .img-fluid {
+                                        height: 260px;
+                                        max-width: 650px;
+                                        border: 3px solid $firstColor;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #signup {
+        .containSignUp {
+            top: 24%;
+        }
+    }
+    #hybrides, #electrics, #diesels {
+        .containHybrides, .containElectrics, .containDiesels {
+            .showHybrides, .showElectrics, .showDiesels {
+                .infoHybride, .infoElectric, .infoDiesel {
+                    .img-fluid {
+                        max-width: 700px;
+                        margin-left: 20px;
+                    }
+                    .numberInfo {
+                        margin: auto;
+                        overflow: auto;
+                        max-width: 800px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #show {
+        .navbar {
+            .navbar-brand {
+                .siteLogo {
+                    margin-top: 2px;
+                    font-size: 1.5em;
+                }
+            }
+        }
+        .containShow {
+            .picsum-img-wrapper {
+                .word {
+                    p {
+                        font-size: 0.8em;
+                    }
+                }
+            }
+        }
+    }
+    #choose {
+        .navbar {
+            .navbar-brand {
+                .siteLogo {
+                    margin-top: 2px;
+                    font-size: 1.5em;
+                }
+            }
+        }
+        .containChoose {
+            .switchCars {
+                top: 46%;
+                .choose {
+                    font-size: 1.6em;
+                }
+                .listTypeCars {
+                    margin: 5px auto;
+                    text-align: center;
+                    max-height: 50px;
+                    overflow: auto;
+                    max-width: 300px;
+                    justify-content: center;
+                }
+                .showCars {
+                    .detailsSwitch {
+                        .infoSwitch {
+                            .row {
+                                margin-top: 10px;
+                                justify-content: center;
+                                max-height: 270px;
+                                max-width: 300px;
+                                overflow: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #login {
+        #btnCloseConnect {
+            left: 91%;
+        }
+    }
+    #signup {
+        #btnCloseConnect {
+            left: 91%;
+        }
+        .containSignUp {
+            form {
+                .register {
+                    font-size: 1.9em;
+                }
+            }
+        }
+    }
+    #hybrides, #electrics, #diesels {
+        .navbar {
+            .navbar-brand {
+                .siteLogo {
+                    margin-top: 2px;
+                    font-size: 1.5em;
+                }
+            }
+        }
+        .containHybrides, .containElectrics, .containDiesels {
+            .showHybrides, .showElectrics, .showDiesels {
+                .infoHybride, .infoElectric, .infoDiesel {
+                    .img-fluid {
+                        max-width: 360px;
+                        margin-left: 20px;
+                    }
+                    .numberInfo {
+                        margin: 10px auto;
+                        overflow: auto;
+                        max-height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #login {
+        .containLogIn {
+            top: 28%;
+            form {
+                .identify {
+                    font-size: 1.8em;
+                }
+            }
+        }
+    }
+    #signup {
+        #btnCloseConnect {
+            left: 90%;
+        }
+        .containSignUp {
+            form {
+                .register {
+                    font-size: 1.7em;
+                }
+            }
+        }
+    }
+    #hybrides, #electrics, #diesels {
+        .containHybrides, .containElectrics, .containDiesels {
+            .showHybrides, .showElectrics, .showDiesels {
+                .infoHybride, .infoElectric, .infoDiesel {
+                    .name {
+                        margin-top: 20px;
+                        font-size: 2.2em;
+                    }
+                }
+            }
+        }
+        .footer {
+            .copy {
+                font-size: 1.4em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #show {
+        .footer {
+            .copy {
+                font-size: 1.4em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #login {
+        .containLogIn {
+            form {
+                .identify {
+                    font-size: 1.7em;
+                }
+            }
+        }
+    }
+    #hybrides, #electrics, #diesels {
+        .containHybrides, .containElectrics, .containDiesels {
+            .showHybrides, .showElectrics, .showDiesels {
+                .infoHybride, .infoElectric, .infoDiesel {
+                    .img-fluid {
+                        height: 350px;
+                        max-width: 280px;
+                        margin-left: 20px;
+                    }
+                    .numberInfo {
+                        margin: 10px auto;
+                        overflow: auto;
+                        max-height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+

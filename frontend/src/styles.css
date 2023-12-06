@@ -100,8 +100,8 @@ body {
 }
 
 #sideCanvas {
-  height: 200px;
-  max-width: 300px;
+  height: 160px;
+  max-width: 250px;
   background-color: black;
   border-radius: 0px 0px 0px 40px;
 }
@@ -111,7 +111,7 @@ body {
 }
 #sideCanvas .offcanvas-body {
   margin-top: -15px;
-  margin-left: -10px;
+  margin-right: 21px;
 }
 #sideCanvas .offcanvas-body .hrefList .href-item {
   text-align: center;
@@ -126,6 +126,7 @@ body {
 #sideCanvas .offcanvas-body #btnConnect {
   display: block;
   margin: -10px auto;
+  padding-left: 25px;
   font-size: 1.4em;
   color: azure;
   font-family: carbon;
@@ -237,10 +238,12 @@ body {
 #choose .containChoose .switchCars .showCars .detailsSwitch .infoSwitch .row {
   margin-top: 10px;
 }
-#choose .containChoose .switchCars .showCars .detailsSwitch .infoSwitch .row .col-lg-4 .img-fluid {
+#choose .containChoose .switchCars .showCars .detailsSwitch .infoSwitch .row .car {
+  max-width: 350px;
+}
+#choose .containChoose .switchCars .showCars .detailsSwitch .infoSwitch .row .car .img-fluid {
   margin: 10px;
   height: 200px;
-  max-width: 800px;
   border-radius: 20px;
   border: 0px solid black;
 }
@@ -276,6 +279,13 @@ body {
 #hybrides .navbar .navbar-brand .siteLogo a {
   color: azure;
   text-decoration: none;
+}
+#hybrides .navbar #btnBar {
+  display: none;
+  border: none;
+  font-size: 1.4em;
+  color: azure;
+  background: transparent;
 }
 #hybrides .navbar .collapse {
   justify-content: end;
@@ -316,14 +326,6 @@ body {
   transform: translate(-50%, -50%);
   position: absolute;
 }
-#hybrides .containHybrides .showHybrides .infoHybride .name {
-  font-size: 2.7em;
-  color: azure;
-  font-family: speedBold;
-  text-align: center;
-  margin-bottom: -20px;
-  text-shadow: 0px 0px 4px #000000;
-}
 #hybrides .containHybrides .showHybrides .infoHybride .img-fluid {
   height: 500px;
   max-width: 1200px;
@@ -344,6 +346,14 @@ body {
   color: azure;
   font-family: carbon;
   letter-spacing: 4px;
+  text-shadow: 0px 0px 4px #000000;
+}
+#hybrides .containHybrides .showHybrides .infoHybride .name {
+  font-size: 2.7em;
+  color: azure;
+  font-family: speedBold;
+  text-align: center;
+  margin-top: 15px;
   text-shadow: 0px 0px 4px #000000;
 }
 #hybrides .footer {
@@ -378,6 +388,13 @@ body {
 #electrics .navbar .navbar-brand .siteLogo a {
   color: azure;
   text-decoration: none;
+}
+#electrics .navbar #btnBar {
+  display: none;
+  border: none;
+  font-size: 1.4em;
+  color: azure;
+  background: transparent;
 }
 #electrics .navbar .collapse {
   justify-content: end;
@@ -418,14 +435,6 @@ body {
   transform: translate(-50%, -50%);
   position: absolute;
 }
-#electrics .containElectrics .showElectrics .infoElectric .name {
-  font-size: 2.7em;
-  color: azure;
-  font-family: speedBold;
-  text-align: center;
-  margin-bottom: -20px;
-  text-shadow: 0px 0px 4px #000000;
-}
 #electrics .containElectrics .showElectrics .infoElectric .img-fluid {
   height: 500px;
   max-width: 1200px;
@@ -446,6 +455,14 @@ body {
   color: azure;
   font-family: carbon;
   letter-spacing: 4px;
+  text-shadow: 0px 0px 4px #000000;
+}
+#electrics .containElectrics .showElectrics .infoElectric .name {
+  font-size: 2.7em;
+  color: azure;
+  font-family: speedBold;
+  text-align: center;
+  margin-top: 15px;
   text-shadow: 0px 0px 4px #000000;
 }
 #electrics .footer {
@@ -480,6 +497,13 @@ body {
 #diesels .navbar .navbar-brand .siteLogo a {
   color: azure;
   text-decoration: none;
+}
+#diesels .navbar #btnBar {
+  display: none;
+  border: none;
+  font-size: 1.4em;
+  color: azure;
+  background: transparent;
 }
 #diesels .navbar .collapse {
   justify-content: end;
@@ -520,14 +544,6 @@ body {
   transform: translate(-50%, -50%);
   position: absolute;
 }
-#diesels .containDiesels .showDiesels .infoDiesel .name {
-  font-size: 2.7em;
-  color: azure;
-  font-family: speedBold;
-  text-align: center;
-  margin-bottom: -20px;
-  text-shadow: 0px 0px 4px #000000;
-}
 #diesels .containDiesels .showDiesels .infoDiesel .img-fluid {
   height: 500px;
   max-width: 1200px;
@@ -548,6 +564,14 @@ body {
   color: azure;
   font-family: carbon;
   letter-spacing: 4px;
+  text-shadow: 0px 0px 4px #000000;
+}
+#diesels .containDiesels .showDiesels .infoDiesel .name {
+  font-size: 2.7em;
+  color: azure;
+  font-family: speedBold;
+  text-align: center;
+  margin-top: 15px;
   text-shadow: 0px 0px 4px #000000;
 }
 #diesels .footer {
@@ -691,12 +715,172 @@ body {
   background-color: darkgreen;
 }
 
+@media screen and (max-width: 1440px) {
+  #choose .containChoose .switchCars {
+    top: 60%;
+  }
+  #choose .containChoose .switchCars .showCars .detailsSwitch .infoSwitch .row {
+    width: 1000px;
+  }
+  #choose .containChoose .switchCars .showCars .detailsSwitch .infoSwitch .row .car .img-fluid {
+    height: 280px;
+    max-width: 650px;
+    border: 3px solid azure;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #show .navbar .navbar-brand .siteLogo {
+    margin-top: 15px;
+  }
+  #choose .containChoose .switchCars {
+    top: 63%;
+  }
+  #choose .containChoose .switchCars .showCars .detailsSwitch .infoSwitch .row {
+    width: 800px;
+  }
+  #choose .containChoose .switchCars .showCars .detailsSwitch .infoSwitch .row .car .img-fluid {
+    height: 260px;
+    max-width: 650px;
+    border: 3px solid azure;
+  }
+  #login #btnCloseConnect {
+    left: 96%;
+  }
+  #signup #btnCloseConnect {
+    left: 96%;
+  }
+}
 @media screen and (max-width: 991px) {
-  #show .navbar .navbar-brand .siteLogo, #choose .navbar .navbar-brand .siteLogo {
+  #show .navbar .navbar-brand .siteLogo, #choose .navbar .navbar-brand .siteLogo, #diesels .navbar .navbar-brand .siteLogo, #electrics .navbar .navbar-brand .siteLogo, #hybrides .navbar .navbar-brand .siteLogo {
     margin-top: -5px;
   }
-  #show .navbar #btnBar, #choose .navbar #btnBar {
+  #show .navbar #btnBar, #choose .navbar #btnBar, #diesels .navbar #btnBar, #electrics .navbar #btnBar, #hybrides .navbar #btnBar {
     display: block;
     margin-top: -10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #show .navbar .navbar-brand .siteLogo {
+    margin-top: 0px;
+  }
+  #choose .containChoose .switchCars {
+    top: 63%;
+  }
+  #choose .containChoose .switchCars .showCars .detailsSwitch .infoSwitch .row {
+    width: 650px;
+  }
+  #choose .containChoose .switchCars .showCars .detailsSwitch .infoSwitch .row .car .img-fluid {
+    height: 260px;
+    max-width: 650px;
+    border: 3px solid azure;
+  }
+  #signup .containSignUp {
+    top: 24%;
+  }
+  #hybrides .containHybrides .showHybrides .infoHybride .img-fluid, #hybrides .containHybrides .showHybrides .infoElectric .img-fluid, #hybrides .containHybrides .showHybrides .infoDiesel .img-fluid, #hybrides .containHybrides .showElectrics .infoHybride .img-fluid, #hybrides .containHybrides .showElectrics .infoElectric .img-fluid, #hybrides .containHybrides .showElectrics .infoDiesel .img-fluid, #hybrides .containHybrides .showDiesels .infoHybride .img-fluid, #hybrides .containHybrides .showDiesels .infoElectric .img-fluid, #hybrides .containHybrides .showDiesels .infoDiesel .img-fluid, #hybrides .containElectrics .showHybrides .infoHybride .img-fluid, #hybrides .containElectrics .showHybrides .infoElectric .img-fluid, #hybrides .containElectrics .showHybrides .infoDiesel .img-fluid, #hybrides .containElectrics .showElectrics .infoHybride .img-fluid, #hybrides .containElectrics .showElectrics .infoElectric .img-fluid, #hybrides .containElectrics .showElectrics .infoDiesel .img-fluid, #hybrides .containElectrics .showDiesels .infoHybride .img-fluid, #hybrides .containElectrics .showDiesels .infoElectric .img-fluid, #hybrides .containElectrics .showDiesels .infoDiesel .img-fluid, #hybrides .containDiesels .showHybrides .infoHybride .img-fluid, #hybrides .containDiesels .showHybrides .infoElectric .img-fluid, #hybrides .containDiesels .showHybrides .infoDiesel .img-fluid, #hybrides .containDiesels .showElectrics .infoHybride .img-fluid, #hybrides .containDiesels .showElectrics .infoElectric .img-fluid, #hybrides .containDiesels .showElectrics .infoDiesel .img-fluid, #hybrides .containDiesels .showDiesels .infoHybride .img-fluid, #hybrides .containDiesels .showDiesels .infoElectric .img-fluid, #hybrides .containDiesels .showDiesels .infoDiesel .img-fluid, #electrics .containHybrides .showHybrides .infoHybride .img-fluid, #electrics .containHybrides .showHybrides .infoElectric .img-fluid, #electrics .containHybrides .showHybrides .infoDiesel .img-fluid, #electrics .containHybrides .showElectrics .infoHybride .img-fluid, #electrics .containHybrides .showElectrics .infoElectric .img-fluid, #electrics .containHybrides .showElectrics .infoDiesel .img-fluid, #electrics .containHybrides .showDiesels .infoHybride .img-fluid, #electrics .containHybrides .showDiesels .infoElectric .img-fluid, #electrics .containHybrides .showDiesels .infoDiesel .img-fluid, #electrics .containElectrics .showHybrides .infoHybride .img-fluid, #electrics .containElectrics .showHybrides .infoElectric .img-fluid, #electrics .containElectrics .showHybrides .infoDiesel .img-fluid, #electrics .containElectrics .showElectrics .infoHybride .img-fluid, #electrics .containElectrics .showElectrics .infoElectric .img-fluid, #electrics .containElectrics .showElectrics .infoDiesel .img-fluid, #electrics .containElectrics .showDiesels .infoHybride .img-fluid, #electrics .containElectrics .showDiesels .infoElectric .img-fluid, #electrics .containElectrics .showDiesels .infoDiesel .img-fluid, #electrics .containDiesels .showHybrides .infoHybride .img-fluid, #electrics .containDiesels .showHybrides .infoElectric .img-fluid, #electrics .containDiesels .showHybrides .infoDiesel .img-fluid, #electrics .containDiesels .showElectrics .infoHybride .img-fluid, #electrics .containDiesels .showElectrics .infoElectric .img-fluid, #electrics .containDiesels .showElectrics .infoDiesel .img-fluid, #electrics .containDiesels .showDiesels .infoHybride .img-fluid, #electrics .containDiesels .showDiesels .infoElectric .img-fluid, #electrics .containDiesels .showDiesels .infoDiesel .img-fluid, #diesels .containHybrides .showHybrides .infoHybride .img-fluid, #diesels .containHybrides .showHybrides .infoElectric .img-fluid, #diesels .containHybrides .showHybrides .infoDiesel .img-fluid, #diesels .containHybrides .showElectrics .infoHybride .img-fluid, #diesels .containHybrides .showElectrics .infoElectric .img-fluid, #diesels .containHybrides .showElectrics .infoDiesel .img-fluid, #diesels .containHybrides .showDiesels .infoHybride .img-fluid, #diesels .containHybrides .showDiesels .infoElectric .img-fluid, #diesels .containHybrides .showDiesels .infoDiesel .img-fluid, #diesels .containElectrics .showHybrides .infoHybride .img-fluid, #diesels .containElectrics .showHybrides .infoElectric .img-fluid, #diesels .containElectrics .showHybrides .infoDiesel .img-fluid, #diesels .containElectrics .showElectrics .infoHybride .img-fluid, #diesels .containElectrics .showElectrics .infoElectric .img-fluid, #diesels .containElectrics .showElectrics .infoDiesel .img-fluid, #diesels .containElectrics .showDiesels .infoHybride .img-fluid, #diesels .containElectrics .showDiesels .infoElectric .img-fluid, #diesels .containElectrics .showDiesels .infoDiesel .img-fluid, #diesels .containDiesels .showHybrides .infoHybride .img-fluid, #diesels .containDiesels .showHybrides .infoElectric .img-fluid, #diesels .containDiesels .showHybrides .infoDiesel .img-fluid, #diesels .containDiesels .showElectrics .infoHybride .img-fluid, #diesels .containDiesels .showElectrics .infoElectric .img-fluid, #diesels .containDiesels .showElectrics .infoDiesel .img-fluid, #diesels .containDiesels .showDiesels .infoHybride .img-fluid, #diesels .containDiesels .showDiesels .infoElectric .img-fluid, #diesels .containDiesels .showDiesels .infoDiesel .img-fluid {
+    max-width: 700px;
+    margin-left: 20px;
+  }
+  #hybrides .containHybrides .showHybrides .infoHybride .numberInfo, #hybrides .containHybrides .showHybrides .infoElectric .numberInfo, #hybrides .containHybrides .showHybrides .infoDiesel .numberInfo, #hybrides .containHybrides .showElectrics .infoHybride .numberInfo, #hybrides .containHybrides .showElectrics .infoElectric .numberInfo, #hybrides .containHybrides .showElectrics .infoDiesel .numberInfo, #hybrides .containHybrides .showDiesels .infoHybride .numberInfo, #hybrides .containHybrides .showDiesels .infoElectric .numberInfo, #hybrides .containHybrides .showDiesels .infoDiesel .numberInfo, #hybrides .containElectrics .showHybrides .infoHybride .numberInfo, #hybrides .containElectrics .showHybrides .infoElectric .numberInfo, #hybrides .containElectrics .showHybrides .infoDiesel .numberInfo, #hybrides .containElectrics .showElectrics .infoHybride .numberInfo, #hybrides .containElectrics .showElectrics .infoElectric .numberInfo, #hybrides .containElectrics .showElectrics .infoDiesel .numberInfo, #hybrides .containElectrics .showDiesels .infoHybride .numberInfo, #hybrides .containElectrics .showDiesels .infoElectric .numberInfo, #hybrides .containElectrics .showDiesels .infoDiesel .numberInfo, #hybrides .containDiesels .showHybrides .infoHybride .numberInfo, #hybrides .containDiesels .showHybrides .infoElectric .numberInfo, #hybrides .containDiesels .showHybrides .infoDiesel .numberInfo, #hybrides .containDiesels .showElectrics .infoHybride .numberInfo, #hybrides .containDiesels .showElectrics .infoElectric .numberInfo, #hybrides .containDiesels .showElectrics .infoDiesel .numberInfo, #hybrides .containDiesels .showDiesels .infoHybride .numberInfo, #hybrides .containDiesels .showDiesels .infoElectric .numberInfo, #hybrides .containDiesels .showDiesels .infoDiesel .numberInfo, #electrics .containHybrides .showHybrides .infoHybride .numberInfo, #electrics .containHybrides .showHybrides .infoElectric .numberInfo, #electrics .containHybrides .showHybrides .infoDiesel .numberInfo, #electrics .containHybrides .showElectrics .infoHybride .numberInfo, #electrics .containHybrides .showElectrics .infoElectric .numberInfo, #electrics .containHybrides .showElectrics .infoDiesel .numberInfo, #electrics .containHybrides .showDiesels .infoHybride .numberInfo, #electrics .containHybrides .showDiesels .infoElectric .numberInfo, #electrics .containHybrides .showDiesels .infoDiesel .numberInfo, #electrics .containElectrics .showHybrides .infoHybride .numberInfo, #electrics .containElectrics .showHybrides .infoElectric .numberInfo, #electrics .containElectrics .showHybrides .infoDiesel .numberInfo, #electrics .containElectrics .showElectrics .infoHybride .numberInfo, #electrics .containElectrics .showElectrics .infoElectric .numberInfo, #electrics .containElectrics .showElectrics .infoDiesel .numberInfo, #electrics .containElectrics .showDiesels .infoHybride .numberInfo, #electrics .containElectrics .showDiesels .infoElectric .numberInfo, #electrics .containElectrics .showDiesels .infoDiesel .numberInfo, #electrics .containDiesels .showHybrides .infoHybride .numberInfo, #electrics .containDiesels .showHybrides .infoElectric .numberInfo, #electrics .containDiesels .showHybrides .infoDiesel .numberInfo, #electrics .containDiesels .showElectrics .infoHybride .numberInfo, #electrics .containDiesels .showElectrics .infoElectric .numberInfo, #electrics .containDiesels .showElectrics .infoDiesel .numberInfo, #electrics .containDiesels .showDiesels .infoHybride .numberInfo, #electrics .containDiesels .showDiesels .infoElectric .numberInfo, #electrics .containDiesels .showDiesels .infoDiesel .numberInfo, #diesels .containHybrides .showHybrides .infoHybride .numberInfo, #diesels .containHybrides .showHybrides .infoElectric .numberInfo, #diesels .containHybrides .showHybrides .infoDiesel .numberInfo, #diesels .containHybrides .showElectrics .infoHybride .numberInfo, #diesels .containHybrides .showElectrics .infoElectric .numberInfo, #diesels .containHybrides .showElectrics .infoDiesel .numberInfo, #diesels .containHybrides .showDiesels .infoHybride .numberInfo, #diesels .containHybrides .showDiesels .infoElectric .numberInfo, #diesels .containHybrides .showDiesels .infoDiesel .numberInfo, #diesels .containElectrics .showHybrides .infoHybride .numberInfo, #diesels .containElectrics .showHybrides .infoElectric .numberInfo, #diesels .containElectrics .showHybrides .infoDiesel .numberInfo, #diesels .containElectrics .showElectrics .infoHybride .numberInfo, #diesels .containElectrics .showElectrics .infoElectric .numberInfo, #diesels .containElectrics .showElectrics .infoDiesel .numberInfo, #diesels .containElectrics .showDiesels .infoHybride .numberInfo, #diesels .containElectrics .showDiesels .infoElectric .numberInfo, #diesels .containElectrics .showDiesels .infoDiesel .numberInfo, #diesels .containDiesels .showHybrides .infoHybride .numberInfo, #diesels .containDiesels .showHybrides .infoElectric .numberInfo, #diesels .containDiesels .showHybrides .infoDiesel .numberInfo, #diesels .containDiesels .showElectrics .infoHybride .numberInfo, #diesels .containDiesels .showElectrics .infoElectric .numberInfo, #diesels .containDiesels .showElectrics .infoDiesel .numberInfo, #diesels .containDiesels .showDiesels .infoHybride .numberInfo, #diesels .containDiesels .showDiesels .infoElectric .numberInfo, #diesels .containDiesels .showDiesels .infoDiesel .numberInfo {
+    margin: auto;
+    overflow: auto;
+    max-width: 800px;
+  }
+}
+@media screen and (max-width: 425px) {
+  #show .navbar .navbar-brand .siteLogo {
+    margin-top: 2px;
+    font-size: 1.5em;
+  }
+  #show .containShow .picsum-img-wrapper .word p {
+    font-size: 0.8em;
+  }
+  #choose .navbar .navbar-brand .siteLogo {
+    margin-top: 2px;
+    font-size: 1.5em;
+  }
+  #choose .containChoose .switchCars {
+    top: 46%;
+  }
+  #choose .containChoose .switchCars .choose {
+    font-size: 1.6em;
+  }
+  #choose .containChoose .switchCars .listTypeCars {
+    margin: 5px auto;
+    text-align: center;
+    max-height: 50px;
+    overflow: auto;
+    max-width: 300px;
+    justify-content: center;
+  }
+  #choose .containChoose .switchCars .showCars .detailsSwitch .infoSwitch .row {
+    margin-top: 10px;
+    justify-content: center;
+    max-height: 270px;
+    max-width: 300px;
+    overflow: auto;
+  }
+  #login #btnCloseConnect {
+    left: 91%;
+  }
+  #signup #btnCloseConnect {
+    left: 91%;
+  }
+  #signup .containSignUp form .register {
+    font-size: 1.9em;
+  }
+  #hybrides .navbar .navbar-brand .siteLogo, #electrics .navbar .navbar-brand .siteLogo, #diesels .navbar .navbar-brand .siteLogo {
+    margin-top: 2px;
+    font-size: 1.5em;
+  }
+  #hybrides .containHybrides .showHybrides .infoHybride .img-fluid, #hybrides .containHybrides .showHybrides .infoElectric .img-fluid, #hybrides .containHybrides .showHybrides .infoDiesel .img-fluid, #hybrides .containHybrides .showElectrics .infoHybride .img-fluid, #hybrides .containHybrides .showElectrics .infoElectric .img-fluid, #hybrides .containHybrides .showElectrics .infoDiesel .img-fluid, #hybrides .containHybrides .showDiesels .infoHybride .img-fluid, #hybrides .containHybrides .showDiesels .infoElectric .img-fluid, #hybrides .containHybrides .showDiesels .infoDiesel .img-fluid, #hybrides .containElectrics .showHybrides .infoHybride .img-fluid, #hybrides .containElectrics .showHybrides .infoElectric .img-fluid, #hybrides .containElectrics .showHybrides .infoDiesel .img-fluid, #hybrides .containElectrics .showElectrics .infoHybride .img-fluid, #hybrides .containElectrics .showElectrics .infoElectric .img-fluid, #hybrides .containElectrics .showElectrics .infoDiesel .img-fluid, #hybrides .containElectrics .showDiesels .infoHybride .img-fluid, #hybrides .containElectrics .showDiesels .infoElectric .img-fluid, #hybrides .containElectrics .showDiesels .infoDiesel .img-fluid, #hybrides .containDiesels .showHybrides .infoHybride .img-fluid, #hybrides .containDiesels .showHybrides .infoElectric .img-fluid, #hybrides .containDiesels .showHybrides .infoDiesel .img-fluid, #hybrides .containDiesels .showElectrics .infoHybride .img-fluid, #hybrides .containDiesels .showElectrics .infoElectric .img-fluid, #hybrides .containDiesels .showElectrics .infoDiesel .img-fluid, #hybrides .containDiesels .showDiesels .infoHybride .img-fluid, #hybrides .containDiesels .showDiesels .infoElectric .img-fluid, #hybrides .containDiesels .showDiesels .infoDiesel .img-fluid, #electrics .containHybrides .showHybrides .infoHybride .img-fluid, #electrics .containHybrides .showHybrides .infoElectric .img-fluid, #electrics .containHybrides .showHybrides .infoDiesel .img-fluid, #electrics .containHybrides .showElectrics .infoHybride .img-fluid, #electrics .containHybrides .showElectrics .infoElectric .img-fluid, #electrics .containHybrides .showElectrics .infoDiesel .img-fluid, #electrics .containHybrides .showDiesels .infoHybride .img-fluid, #electrics .containHybrides .showDiesels .infoElectric .img-fluid, #electrics .containHybrides .showDiesels .infoDiesel .img-fluid, #electrics .containElectrics .showHybrides .infoHybride .img-fluid, #electrics .containElectrics .showHybrides .infoElectric .img-fluid, #electrics .containElectrics .showHybrides .infoDiesel .img-fluid, #electrics .containElectrics .showElectrics .infoHybride .img-fluid, #electrics .containElectrics .showElectrics .infoElectric .img-fluid, #electrics .containElectrics .showElectrics .infoDiesel .img-fluid, #electrics .containElectrics .showDiesels .infoHybride .img-fluid, #electrics .containElectrics .showDiesels .infoElectric .img-fluid, #electrics .containElectrics .showDiesels .infoDiesel .img-fluid, #electrics .containDiesels .showHybrides .infoHybride .img-fluid, #electrics .containDiesels .showHybrides .infoElectric .img-fluid, #electrics .containDiesels .showHybrides .infoDiesel .img-fluid, #electrics .containDiesels .showElectrics .infoHybride .img-fluid, #electrics .containDiesels .showElectrics .infoElectric .img-fluid, #electrics .containDiesels .showElectrics .infoDiesel .img-fluid, #electrics .containDiesels .showDiesels .infoHybride .img-fluid, #electrics .containDiesels .showDiesels .infoElectric .img-fluid, #electrics .containDiesels .showDiesels .infoDiesel .img-fluid, #diesels .containHybrides .showHybrides .infoHybride .img-fluid, #diesels .containHybrides .showHybrides .infoElectric .img-fluid, #diesels .containHybrides .showHybrides .infoDiesel .img-fluid, #diesels .containHybrides .showElectrics .infoHybride .img-fluid, #diesels .containHybrides .showElectrics .infoElectric .img-fluid, #diesels .containHybrides .showElectrics .infoDiesel .img-fluid, #diesels .containHybrides .showDiesels .infoHybride .img-fluid, #diesels .containHybrides .showDiesels .infoElectric .img-fluid, #diesels .containHybrides .showDiesels .infoDiesel .img-fluid, #diesels .containElectrics .showHybrides .infoHybride .img-fluid, #diesels .containElectrics .showHybrides .infoElectric .img-fluid, #diesels .containElectrics .showHybrides .infoDiesel .img-fluid, #diesels .containElectrics .showElectrics .infoHybride .img-fluid, #diesels .containElectrics .showElectrics .infoElectric .img-fluid, #diesels .containElectrics .showElectrics .infoDiesel .img-fluid, #diesels .containElectrics .showDiesels .infoHybride .img-fluid, #diesels .containElectrics .showDiesels .infoElectric .img-fluid, #diesels .containElectrics .showDiesels .infoDiesel .img-fluid, #diesels .containDiesels .showHybrides .infoHybride .img-fluid, #diesels .containDiesels .showHybrides .infoElectric .img-fluid, #diesels .containDiesels .showHybrides .infoDiesel .img-fluid, #diesels .containDiesels .showElectrics .infoHybride .img-fluid, #diesels .containDiesels .showElectrics .infoElectric .img-fluid, #diesels .containDiesels .showElectrics .infoDiesel .img-fluid, #diesels .containDiesels .showDiesels .infoHybride .img-fluid, #diesels .containDiesels .showDiesels .infoElectric .img-fluid, #diesels .containDiesels .showDiesels .infoDiesel .img-fluid {
+    max-width: 360px;
+    margin-left: 20px;
+  }
+  #hybrides .containHybrides .showHybrides .infoHybride .numberInfo, #hybrides .containHybrides .showHybrides .infoElectric .numberInfo, #hybrides .containHybrides .showHybrides .infoDiesel .numberInfo, #hybrides .containHybrides .showElectrics .infoHybride .numberInfo, #hybrides .containHybrides .showElectrics .infoElectric .numberInfo, #hybrides .containHybrides .showElectrics .infoDiesel .numberInfo, #hybrides .containHybrides .showDiesels .infoHybride .numberInfo, #hybrides .containHybrides .showDiesels .infoElectric .numberInfo, #hybrides .containHybrides .showDiesels .infoDiesel .numberInfo, #hybrides .containElectrics .showHybrides .infoHybride .numberInfo, #hybrides .containElectrics .showHybrides .infoElectric .numberInfo, #hybrides .containElectrics .showHybrides .infoDiesel .numberInfo, #hybrides .containElectrics .showElectrics .infoHybride .numberInfo, #hybrides .containElectrics .showElectrics .infoElectric .numberInfo, #hybrides .containElectrics .showElectrics .infoDiesel .numberInfo, #hybrides .containElectrics .showDiesels .infoHybride .numberInfo, #hybrides .containElectrics .showDiesels .infoElectric .numberInfo, #hybrides .containElectrics .showDiesels .infoDiesel .numberInfo, #hybrides .containDiesels .showHybrides .infoHybride .numberInfo, #hybrides .containDiesels .showHybrides .infoElectric .numberInfo, #hybrides .containDiesels .showHybrides .infoDiesel .numberInfo, #hybrides .containDiesels .showElectrics .infoHybride .numberInfo, #hybrides .containDiesels .showElectrics .infoElectric .numberInfo, #hybrides .containDiesels .showElectrics .infoDiesel .numberInfo, #hybrides .containDiesels .showDiesels .infoHybride .numberInfo, #hybrides .containDiesels .showDiesels .infoElectric .numberInfo, #hybrides .containDiesels .showDiesels .infoDiesel .numberInfo, #electrics .containHybrides .showHybrides .infoHybride .numberInfo, #electrics .containHybrides .showHybrides .infoElectric .numberInfo, #electrics .containHybrides .showHybrides .infoDiesel .numberInfo, #electrics .containHybrides .showElectrics .infoHybride .numberInfo, #electrics .containHybrides .showElectrics .infoElectric .numberInfo, #electrics .containHybrides .showElectrics .infoDiesel .numberInfo, #electrics .containHybrides .showDiesels .infoHybride .numberInfo, #electrics .containHybrides .showDiesels .infoElectric .numberInfo, #electrics .containHybrides .showDiesels .infoDiesel .numberInfo, #electrics .containElectrics .showHybrides .infoHybride .numberInfo, #electrics .containElectrics .showHybrides .infoElectric .numberInfo, #electrics .containElectrics .showHybrides .infoDiesel .numberInfo, #electrics .containElectrics .showElectrics .infoHybride .numberInfo, #electrics .containElectrics .showElectrics .infoElectric .numberInfo, #electrics .containElectrics .showElectrics .infoDiesel .numberInfo, #electrics .containElectrics .showDiesels .infoHybride .numberInfo, #electrics .containElectrics .showDiesels .infoElectric .numberInfo, #electrics .containElectrics .showDiesels .infoDiesel .numberInfo, #electrics .containDiesels .showHybrides .infoHybride .numberInfo, #electrics .containDiesels .showHybrides .infoElectric .numberInfo, #electrics .containDiesels .showHybrides .infoDiesel .numberInfo, #electrics .containDiesels .showElectrics .infoHybride .numberInfo, #electrics .containDiesels .showElectrics .infoElectric .numberInfo, #electrics .containDiesels .showElectrics .infoDiesel .numberInfo, #electrics .containDiesels .showDiesels .infoHybride .numberInfo, #electrics .containDiesels .showDiesels .infoElectric .numberInfo, #electrics .containDiesels .showDiesels .infoDiesel .numberInfo, #diesels .containHybrides .showHybrides .infoHybride .numberInfo, #diesels .containHybrides .showHybrides .infoElectric .numberInfo, #diesels .containHybrides .showHybrides .infoDiesel .numberInfo, #diesels .containHybrides .showElectrics .infoHybride .numberInfo, #diesels .containHybrides .showElectrics .infoElectric .numberInfo, #diesels .containHybrides .showElectrics .infoDiesel .numberInfo, #diesels .containHybrides .showDiesels .infoHybride .numberInfo, #diesels .containHybrides .showDiesels .infoElectric .numberInfo, #diesels .containHybrides .showDiesels .infoDiesel .numberInfo, #diesels .containElectrics .showHybrides .infoHybride .numberInfo, #diesels .containElectrics .showHybrides .infoElectric .numberInfo, #diesels .containElectrics .showHybrides .infoDiesel .numberInfo, #diesels .containElectrics .showElectrics .infoHybride .numberInfo, #diesels .containElectrics .showElectrics .infoElectric .numberInfo, #diesels .containElectrics .showElectrics .infoDiesel .numberInfo, #diesels .containElectrics .showDiesels .infoHybride .numberInfo, #diesels .containElectrics .showDiesels .infoElectric .numberInfo, #diesels .containElectrics .showDiesels .infoDiesel .numberInfo, #diesels .containDiesels .showHybrides .infoHybride .numberInfo, #diesels .containDiesels .showHybrides .infoElectric .numberInfo, #diesels .containDiesels .showHybrides .infoDiesel .numberInfo, #diesels .containDiesels .showElectrics .infoHybride .numberInfo, #diesels .containDiesels .showElectrics .infoElectric .numberInfo, #diesels .containDiesels .showElectrics .infoDiesel .numberInfo, #diesels .containDiesels .showDiesels .infoHybride .numberInfo, #diesels .containDiesels .showDiesels .infoElectric .numberInfo, #diesels .containDiesels .showDiesels .infoDiesel .numberInfo {
+    margin: 10px auto;
+    overflow: auto;
+    max-height: 100px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #login .containLogIn {
+    top: 28%;
+  }
+  #login .containLogIn form .identify {
+    font-size: 1.8em;
+  }
+  #signup #btnCloseConnect {
+    left: 90%;
+  }
+  #signup .containSignUp form .register {
+    font-size: 1.7em;
+  }
+  #hybrides .containHybrides .showHybrides .infoHybride .name, #hybrides .containHybrides .showHybrides .infoElectric .name, #hybrides .containHybrides .showHybrides .infoDiesel .name, #hybrides .containHybrides .showElectrics .infoHybride .name, #hybrides .containHybrides .showElectrics .infoElectric .name, #hybrides .containHybrides .showElectrics .infoDiesel .name, #hybrides .containHybrides .showDiesels .infoHybride .name, #hybrides .containHybrides .showDiesels .infoElectric .name, #hybrides .containHybrides .showDiesels .infoDiesel .name, #hybrides .containElectrics .showHybrides .infoHybride .name, #hybrides .containElectrics .showHybrides .infoElectric .name, #hybrides .containElectrics .showHybrides .infoDiesel .name, #hybrides .containElectrics .showElectrics .infoHybride .name, #hybrides .containElectrics .showElectrics .infoElectric .name, #hybrides .containElectrics .showElectrics .infoDiesel .name, #hybrides .containElectrics .showDiesels .infoHybride .name, #hybrides .containElectrics .showDiesels .infoElectric .name, #hybrides .containElectrics .showDiesels .infoDiesel .name, #hybrides .containDiesels .showHybrides .infoHybride .name, #hybrides .containDiesels .showHybrides .infoElectric .name, #hybrides .containDiesels .showHybrides .infoDiesel .name, #hybrides .containDiesels .showElectrics .infoHybride .name, #hybrides .containDiesels .showElectrics .infoElectric .name, #hybrides .containDiesels .showElectrics .infoDiesel .name, #hybrides .containDiesels .showDiesels .infoHybride .name, #hybrides .containDiesels .showDiesels .infoElectric .name, #hybrides .containDiesels .showDiesels .infoDiesel .name, #electrics .containHybrides .showHybrides .infoHybride .name, #electrics .containHybrides .showHybrides .infoElectric .name, #electrics .containHybrides .showHybrides .infoDiesel .name, #electrics .containHybrides .showElectrics .infoHybride .name, #electrics .containHybrides .showElectrics .infoElectric .name, #electrics .containHybrides .showElectrics .infoDiesel .name, #electrics .containHybrides .showDiesels .infoHybride .name, #electrics .containHybrides .showDiesels .infoElectric .name, #electrics .containHybrides .showDiesels .infoDiesel .name, #electrics .containElectrics .showHybrides .infoHybride .name, #electrics .containElectrics .showHybrides .infoElectric .name, #electrics .containElectrics .showHybrides .infoDiesel .name, #electrics .containElectrics .showElectrics .infoHybride .name, #electrics .containElectrics .showElectrics .infoElectric .name, #electrics .containElectrics .showElectrics .infoDiesel .name, #electrics .containElectrics .showDiesels .infoHybride .name, #electrics .containElectrics .showDiesels .infoElectric .name, #electrics .containElectrics .showDiesels .infoDiesel .name, #electrics .containDiesels .showHybrides .infoHybride .name, #electrics .containDiesels .showHybrides .infoElectric .name, #electrics .containDiesels .showHybrides .infoDiesel .name, #electrics .containDiesels .showElectrics .infoHybride .name, #electrics .containDiesels .showElectrics .infoElectric .name, #electrics .containDiesels .showElectrics .infoDiesel .name, #electrics .containDiesels .showDiesels .infoHybride .name, #electrics .containDiesels .showDiesels .infoElectric .name, #electrics .containDiesels .showDiesels .infoDiesel .name, #diesels .containHybrides .showHybrides .infoHybride .name, #diesels .containHybrides .showHybrides .infoElectric .name, #diesels .containHybrides .showHybrides .infoDiesel .name, #diesels .containHybrides .showElectrics .infoHybride .name, #diesels .containHybrides .showElectrics .infoElectric .name, #diesels .containHybrides .showElectrics .infoDiesel .name, #diesels .containHybrides .showDiesels .infoHybride .name, #diesels .containHybrides .showDiesels .infoElectric .name, #diesels .containHybrides .showDiesels .infoDiesel .name, #diesels .containElectrics .showHybrides .infoHybride .name, #diesels .containElectrics .showHybrides .infoElectric .name, #diesels .containElectrics .showHybrides .infoDiesel .name, #diesels .containElectrics .showElectrics .infoHybride .name, #diesels .containElectrics .showElectrics .infoElectric .name, #diesels .containElectrics .showElectrics .infoDiesel .name, #diesels .containElectrics .showDiesels .infoHybride .name, #diesels .containElectrics .showDiesels .infoElectric .name, #diesels .containElectrics .showDiesels .infoDiesel .name, #diesels .containDiesels .showHybrides .infoHybride .name, #diesels .containDiesels .showHybrides .infoElectric .name, #diesels .containDiesels .showHybrides .infoDiesel .name, #diesels .containDiesels .showElectrics .infoHybride .name, #diesels .containDiesels .showElectrics .infoElectric .name, #diesels .containDiesels .showElectrics .infoDiesel .name, #diesels .containDiesels .showDiesels .infoHybride .name, #diesels .containDiesels .showDiesels .infoElectric .name, #diesels .containDiesels .showDiesels .infoDiesel .name {
+    margin-top: 20px;
+    font-size: 2.2em;
+  }
+  #hybrides .footer .copy, #electrics .footer .copy, #diesels .footer .copy {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 350px) {
+  #show .footer .copy {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 320px) {
+  #login .containLogIn form .identify {
+    font-size: 1.7em;
+  }
+  #hybrides .containHybrides .showHybrides .infoHybride .img-fluid, #hybrides .containHybrides .showHybrides .infoElectric .img-fluid, #hybrides .containHybrides .showHybrides .infoDiesel .img-fluid, #hybrides .containHybrides .showElectrics .infoHybride .img-fluid, #hybrides .containHybrides .showElectrics .infoElectric .img-fluid, #hybrides .containHybrides .showElectrics .infoDiesel .img-fluid, #hybrides .containHybrides .showDiesels .infoHybride .img-fluid, #hybrides .containHybrides .showDiesels .infoElectric .img-fluid, #hybrides .containHybrides .showDiesels .infoDiesel .img-fluid, #hybrides .containElectrics .showHybrides .infoHybride .img-fluid, #hybrides .containElectrics .showHybrides .infoElectric .img-fluid, #hybrides .containElectrics .showHybrides .infoDiesel .img-fluid, #hybrides .containElectrics .showElectrics .infoHybride .img-fluid, #hybrides .containElectrics .showElectrics .infoElectric .img-fluid, #hybrides .containElectrics .showElectrics .infoDiesel .img-fluid, #hybrides .containElectrics .showDiesels .infoHybride .img-fluid, #hybrides .containElectrics .showDiesels .infoElectric .img-fluid, #hybrides .containElectrics .showDiesels .infoDiesel .img-fluid, #hybrides .containDiesels .showHybrides .infoHybride .img-fluid, #hybrides .containDiesels .showHybrides .infoElectric .img-fluid, #hybrides .containDiesels .showHybrides .infoDiesel .img-fluid, #hybrides .containDiesels .showElectrics .infoHybride .img-fluid, #hybrides .containDiesels .showElectrics .infoElectric .img-fluid, #hybrides .containDiesels .showElectrics .infoDiesel .img-fluid, #hybrides .containDiesels .showDiesels .infoHybride .img-fluid, #hybrides .containDiesels .showDiesels .infoElectric .img-fluid, #hybrides .containDiesels .showDiesels .infoDiesel .img-fluid, #electrics .containHybrides .showHybrides .infoHybride .img-fluid, #electrics .containHybrides .showHybrides .infoElectric .img-fluid, #electrics .containHybrides .showHybrides .infoDiesel .img-fluid, #electrics .containHybrides .showElectrics .infoHybride .img-fluid, #electrics .containHybrides .showElectrics .infoElectric .img-fluid, #electrics .containHybrides .showElectrics .infoDiesel .img-fluid, #electrics .containHybrides .showDiesels .infoHybride .img-fluid, #electrics .containHybrides .showDiesels .infoElectric .img-fluid, #electrics .containHybrides .showDiesels .infoDiesel .img-fluid, #electrics .containElectrics .showHybrides .infoHybride .img-fluid, #electrics .containElectrics .showHybrides .infoElectric .img-fluid, #electrics .containElectrics .showHybrides .infoDiesel .img-fluid, #electrics .containElectrics .showElectrics .infoHybride .img-fluid, #electrics .containElectrics .showElectrics .infoElectric .img-fluid, #electrics .containElectrics .showElectrics .infoDiesel .img-fluid, #electrics .containElectrics .showDiesels .infoHybride .img-fluid, #electrics .containElectrics .showDiesels .infoElectric .img-fluid, #electrics .containElectrics .showDiesels .infoDiesel .img-fluid, #electrics .containDiesels .showHybrides .infoHybride .img-fluid, #electrics .containDiesels .showHybrides .infoElectric .img-fluid, #electrics .containDiesels .showHybrides .infoDiesel .img-fluid, #electrics .containDiesels .showElectrics .infoHybride .img-fluid, #electrics .containDiesels .showElectrics .infoElectric .img-fluid, #electrics .containDiesels .showElectrics .infoDiesel .img-fluid, #electrics .containDiesels .showDiesels .infoHybride .img-fluid, #electrics .containDiesels .showDiesels .infoElectric .img-fluid, #electrics .containDiesels .showDiesels .infoDiesel .img-fluid, #diesels .containHybrides .showHybrides .infoHybride .img-fluid, #diesels .containHybrides .showHybrides .infoElectric .img-fluid, #diesels .containHybrides .showHybrides .infoDiesel .img-fluid, #diesels .containHybrides .showElectrics .infoHybride .img-fluid, #diesels .containHybrides .showElectrics .infoElectric .img-fluid, #diesels .containHybrides .showElectrics .infoDiesel .img-fluid, #diesels .containHybrides .showDiesels .infoHybride .img-fluid, #diesels .containHybrides .showDiesels .infoElectric .img-fluid, #diesels .containHybrides .showDiesels .infoDiesel .img-fluid, #diesels .containElectrics .showHybrides .infoHybride .img-fluid, #diesels .containElectrics .showHybrides .infoElectric .img-fluid, #diesels .containElectrics .showHybrides .infoDiesel .img-fluid, #diesels .containElectrics .showElectrics .infoHybride .img-fluid, #diesels .containElectrics .showElectrics .infoElectric .img-fluid, #diesels .containElectrics .showElectrics .infoDiesel .img-fluid, #diesels .containElectrics .showDiesels .infoHybride .img-fluid, #diesels .containElectrics .showDiesels .infoElectric .img-fluid, #diesels .containElectrics .showDiesels .infoDiesel .img-fluid, #diesels .containDiesels .showHybrides .infoHybride .img-fluid, #diesels .containDiesels .showHybrides .infoElectric .img-fluid, #diesels .containDiesels .showHybrides .infoDiesel .img-fluid, #diesels .containDiesels .showElectrics .infoHybride .img-fluid, #diesels .containDiesels .showElectrics .infoElectric .img-fluid, #diesels .containDiesels .showElectrics .infoDiesel .img-fluid, #diesels .containDiesels .showDiesels .infoHybride .img-fluid, #diesels .containDiesels .showDiesels .infoElectric .img-fluid, #diesels .containDiesels .showDiesels .infoDiesel .img-fluid {
+    height: 350px;
+    max-width: 280px;
+    margin-left: 20px;
+  }
+  #hybrides .containHybrides .showHybrides .infoHybride .numberInfo, #hybrides .containHybrides .showHybrides .infoElectric .numberInfo, #hybrides .containHybrides .showHybrides .infoDiesel .numberInfo, #hybrides .containHybrides .showElectrics .infoHybride .numberInfo, #hybrides .containHybrides .showElectrics .infoElectric .numberInfo, #hybrides .containHybrides .showElectrics .infoDiesel .numberInfo, #hybrides .containHybrides .showDiesels .infoHybride .numberInfo, #hybrides .containHybrides .showDiesels .infoElectric .numberInfo, #hybrides .containHybrides .showDiesels .infoDiesel .numberInfo, #hybrides .containElectrics .showHybrides .infoHybride .numberInfo, #hybrides .containElectrics .showHybrides .infoElectric .numberInfo, #hybrides .containElectrics .showHybrides .infoDiesel .numberInfo, #hybrides .containElectrics .showElectrics .infoHybride .numberInfo, #hybrides .containElectrics .showElectrics .infoElectric .numberInfo, #hybrides .containElectrics .showElectrics .infoDiesel .numberInfo, #hybrides .containElectrics .showDiesels .infoHybride .numberInfo, #hybrides .containElectrics .showDiesels .infoElectric .numberInfo, #hybrides .containElectrics .showDiesels .infoDiesel .numberInfo, #hybrides .containDiesels .showHybrides .infoHybride .numberInfo, #hybrides .containDiesels .showHybrides .infoElectric .numberInfo, #hybrides .containDiesels .showHybrides .infoDiesel .numberInfo, #hybrides .containDiesels .showElectrics .infoHybride .numberInfo, #hybrides .containDiesels .showElectrics .infoElectric .numberInfo, #hybrides .containDiesels .showElectrics .infoDiesel .numberInfo, #hybrides .containDiesels .showDiesels .infoHybride .numberInfo, #hybrides .containDiesels .showDiesels .infoElectric .numberInfo, #hybrides .containDiesels .showDiesels .infoDiesel .numberInfo, #electrics .containHybrides .showHybrides .infoHybride .numberInfo, #electrics .containHybrides .showHybrides .infoElectric .numberInfo, #electrics .containHybrides .showHybrides .infoDiesel .numberInfo, #electrics .containHybrides .showElectrics .infoHybride .numberInfo, #electrics .containHybrides .showElectrics .infoElectric .numberInfo, #electrics .containHybrides .showElectrics .infoDiesel .numberInfo, #electrics .containHybrides .showDiesels .infoHybride .numberInfo, #electrics .containHybrides .showDiesels .infoElectric .numberInfo, #electrics .containHybrides .showDiesels .infoDiesel .numberInfo, #electrics .containElectrics .showHybrides .infoHybride .numberInfo, #electrics .containElectrics .showHybrides .infoElectric .numberInfo, #electrics .containElectrics .showHybrides .infoDiesel .numberInfo, #electrics .containElectrics .showElectrics .infoHybride .numberInfo, #electrics .containElectrics .showElectrics .infoElectric .numberInfo, #electrics .containElectrics .showElectrics .infoDiesel .numberInfo, #electrics .containElectrics .showDiesels .infoHybride .numberInfo, #electrics .containElectrics .showDiesels .infoElectric .numberInfo, #electrics .containElectrics .showDiesels .infoDiesel .numberInfo, #electrics .containDiesels .showHybrides .infoHybride .numberInfo, #electrics .containDiesels .showHybrides .infoElectric .numberInfo, #electrics .containDiesels .showHybrides .infoDiesel .numberInfo, #electrics .containDiesels .showElectrics .infoHybride .numberInfo, #electrics .containDiesels .showElectrics .infoElectric .numberInfo, #electrics .containDiesels .showElectrics .infoDiesel .numberInfo, #electrics .containDiesels .showDiesels .infoHybride .numberInfo, #electrics .containDiesels .showDiesels .infoElectric .numberInfo, #electrics .containDiesels .showDiesels .infoDiesel .numberInfo, #diesels .containHybrides .showHybrides .infoHybride .numberInfo, #diesels .containHybrides .showHybrides .infoElectric .numberInfo, #diesels .containHybrides .showHybrides .infoDiesel .numberInfo, #diesels .containHybrides .showElectrics .infoHybride .numberInfo, #diesels .containHybrides .showElectrics .infoElectric .numberInfo, #diesels .containHybrides .showElectrics .infoDiesel .numberInfo, #diesels .containHybrides .showDiesels .infoHybride .numberInfo, #diesels .containHybrides .showDiesels .infoElectric .numberInfo, #diesels .containHybrides .showDiesels .infoDiesel .numberInfo, #diesels .containElectrics .showHybrides .infoHybride .numberInfo, #diesels .containElectrics .showHybrides .infoElectric .numberInfo, #diesels .containElectrics .showHybrides .infoDiesel .numberInfo, #diesels .containElectrics .showElectrics .infoHybride .numberInfo, #diesels .containElectrics .showElectrics .infoElectric .numberInfo, #diesels .containElectrics .showElectrics .infoDiesel .numberInfo, #diesels .containElectrics .showDiesels .infoHybride .numberInfo, #diesels .containElectrics .showDiesels .infoElectric .numberInfo, #diesels .containElectrics .showDiesels .infoDiesel .numberInfo, #diesels .containDiesels .showHybrides .infoHybride .numberInfo, #diesels .containDiesels .showHybrides .infoElectric .numberInfo, #diesels .containDiesels .showHybrides .infoDiesel .numberInfo, #diesels .containDiesels .showElectrics .infoHybride .numberInfo, #diesels .containDiesels .showElectrics .infoElectric .numberInfo, #diesels .containDiesels .showElectrics .infoDiesel .numberInfo, #diesels .containDiesels .showDiesels .infoHybride .numberInfo, #diesels .containDiesels .showDiesels .infoElectric .numberInfo, #diesels .containDiesels .showDiesels .infoDiesel .numberInfo {
+    margin: 10px auto;
+    overflow: auto;
+    max-height: 100px;
   }
 }/*# sourceMappingURL=styles.css.map */
