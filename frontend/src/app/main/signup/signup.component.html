@@ -1,24 +1,30 @@
 <section id="signup">
     <button type="button" id="btnCloseConnect" [routerLink]="'/show'"><i class="fas fa-times"></i></button>
     <div class="containSignUp">
-        <form>
+        <div class="alert alert-success" role="alert" *ngIf="successmsg">
+            <p>Bravo, vous etes enregistré !</p>
+        </div>
+        <div class="alert alert-danger" role="alert" *ngIf="errormsg">
+            <p>Echec de l'enregistrement !</p>
+        </div>
+        <form (ngSubmit)="signup()">
             <p class="register">Enregistrer-vous :</p>
             <div class="row">
                 <div class="col-lg-6">
                     <label></label>
-                    <input type="text" id="user" class="form-control" formControlName="user" placeholder="Nom d'utilisateur" />
+                    <input type="text" name="pseudo" id="pseudo" class="form-control" placeholder="Pseudo" [(ngModel)]="user.pseudo" required />
                 </div>
                 <div class="col-lg-6">
                     <label></label>
-                    <input type="text" id="adress" class="form-control" formControlName="adress" placeholder="Adresse email" />
+                    <input type="email" name="adress" id="adress" class="form-control" placeholder="Adresse e-mail" [(ngModel)]="user.adress" required />
                 </div>
                 <div class="col-lg-6">
                     <label></label>
-                    <input type="text" id="phone" class="form-control" formControlName="phone" placeholder="Numéro de téléphone" />
+                    <input type="text" name="phone" id="phone" class="form-control" placeholder="Numéro de téléphone" [(ngModel)]="user.phone" required />
                 </div>
                 <div class="col-lg-6">
                     <label></label>
-                    <input type="text" id="pass" class="form-control" formControlName="pass" placeholder="Mot de Passe" />
+                    <input type="password" name="pass" id="pass" class="form-control" placeholder="Mot de passe" [(ngModel)]="user.pass" required />
                 </div>
             </div>
             <p class="nomember">Vous etes déjà inscris ? <a [routerLink]="'/login'" class="hrefLogIn">Connectez-vous</a></p>

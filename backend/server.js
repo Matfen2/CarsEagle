@@ -27,77 +27,56 @@ app.listen(PORT, () => {
     console.log('Connection au port serveur ' + PORT);
 })
 
-// LOG IN VERIFY DATA
-app.post('/connect', (req, res) => {
-    const user = req.body.user;
-    const pass = req.body.pass;
+// LOG IN
+app.post("/login", (req, res) => {
+  let address = req.body.adress;
+  let password = req.body.pass;
 
-    let qr = `slect * from connect where user = ? and pass = ?`;
+  let query = `SELECT * FROM user WHERE adress = ? AND pass = ?`;
 
-    db.query(qr, [user, pass], (error, result) => {
-        if (error) {
-            console.log(error);
-            res.status(500).send({message: 'Internal server error'});
-        }
-        if (result.length>0) {
-            res.send({
-                message: "Connexion réussie"
-            })
-        } else {
-            res.send({
-              message: "Connexion invalide",
-            });
-        }
-    })
-})
-
-// SIGN UP DATA
-app.post("/connect", (req, res) => {
-  const user = req.body.user;
-  const adress = req.body.adress;
-  const phone = req.body.phone;
-  const pass = req.body.pass;
-
-  let qr = `insert into connect (user, adress, phone, pass) values (?, ?, ?, ?)`;
-
-  db.query(qr, [user, adress, phone,  pass], (error, result) => {
-    if (error) {
-      console.log(error);
-      res.status(500).send({ message: "Internal server error" });
-    }
-    if (result.affectedRows > 0) {
-      res.send({
-        message: "Enregistrement réussi",
-      });
+  db.query(query, [address, password], (error, results) => {
+    if (!error) {
+      if (results.length > 0) {
+        return res.status(200).send({ message: "Connexion réussie" });
+      } else {
+        return res
+          .status(401)
+          .json({ message: "Adresse ou mot de passe incorrect." });
+      }
     } else {
-      res.send({
-        message: "Echec de l'enregistrement",
-      });
+      return res.status(500).send({ message: "Erreur interne du serveur" });
     }
   });
 });
 
-// CONTACT
-app.post("/contact", (req, res) => {
-  const pseudo = req.body.pseudo;
-  const subject = req.body.subject;
-  const message= req.bodymessage;
+// REGISTER
+app.post("/signup", (req, res) => {
+  let user = req.body;
+  let query = `SELECT pseudo, adress, phone, pass FROM user WHERE adress = ?`;
 
-  let qr = `insert into connect (pseudo, subject, message) values (?, ?, ?)`;
-
-  db.query(qr, [pseudo, subject, message], (error, result) => {
-    if (error) {
-      console.log(error);
-      res.status(500).send({ message: "Internal server error" });
-    }
-    if (result.affectedRows > 0) {
-      res.send({
-        message: "Message envoyé",
-      });
+  db.query(query, [user.adress], (error, results) => {
+    if (!error) {
+      if (results.length <= 0) {
+        let qr = `INSERT INTO user (pseudo, adress, phone, pass) VALUES (?, ?, ?, ?)`;
+        db.query(
+          qr,
+          [user.pseudo, user.adress, user.phone, user.pass],
+          (error, results) => {
+            if (!error) {
+              return res.status(200).send({ message: "Enregistrement réussi" });
+            } else {
+              console.error(error);
+              return res
+                .status(500)
+                .send({ message: "Echec de l'enregistrement" });
+            }
+          }
+        );
+      } else {
+        return res.status(400).json({ message: "Compte déjà existant." });
+      }
     } else {
-      res.send({
-        message: "Echec de l'envoi du message",
-      });
+      return res.status(400).json({ message: error });
     }
   });
 });
