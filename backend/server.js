@@ -1,7 +1,7 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const mysql = require('mysql');
+const express = require("express");
+const bodyParser = require("body-parser");
+const cors = require("cors");
+const mysql = require("mysql");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -9,23 +9,28 @@ app.use(cors());
 app.use(bodyParser.json());
 
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'Matfen',
-    password: 'Geralt2077!',
-    database: 'cars'
+  host: process.env.DB_HOST || "localhost",
+  user: process.env.DB_USER || "Matfen",
+  password: process.env.DB_PASSWORD || "Geralt2077!",
+  database: process.env.DB_DATABASE || "cars",
 });
 
+
 db.connect((error) => {
-    if (error) {
-        console.log('Erreur de la connection de la base de données');
-    } else {
-        console.log('Succès de la connection de la base de données');
-    }
+  if (error) {
+    console.log("Erreur de la connection de la base de données");
+  } else {
+    console.log("Succès de la connection de la base de données");
+  }
 });
 
 app.listen(PORT, () => {
-    console.log('Connection au port serveur ' + PORT);
-})
+  console.log("Connection au port serveur " + PORT);
+});
+
+app.get("/", (req, res) => {
+  res.send("Réussite de la connexion à la base de données");
+});
 
 // LOG IN
 app.post("/login", (req, res) => {

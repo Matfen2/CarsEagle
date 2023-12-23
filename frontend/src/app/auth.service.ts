@@ -8,11 +8,11 @@ import { Observable } from 'rxjs';
 export class AuthService {
   constructor(private _http: HttpClient) {}
 
-  apiUrl = 'http://localhost:3000';
+  apiUrl = 'https://cars-eagle-9283469b77e5.herokuapp.com';
 
   // LOGIN
-  connectMember(adress: string, pass: string): Observable <any> {
-    return this._http.post(`${this.apiUrl}/login`, { adress, pass});
+  connectMember(adress: string, pass: string): Observable<any> {
+    return this._http.post(`${this.apiUrl}/login`, { adress, pass });
   }
 
   // REGISTER
