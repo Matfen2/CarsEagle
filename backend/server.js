@@ -9,10 +9,10 @@ app.use(cors());
 app.use(bodyParser.json());
 
 const db = mysql.createConnection({
-  host: process.env.DB_HOST || "localhost",
-  user: process.env.DB_USER || "Matfen",
-  password: process.env.DB_PASSWORD || "Geralt2077!",
-  database: process.env.DB_DATABASE || "cars",
+  host: "localhost",
+  user: "Matfen",
+  password: "Geralt2077!",
+  database: "cars",
 });
 
 
